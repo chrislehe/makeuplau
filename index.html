@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Makeup comparison tool for Laura 💖</title>
+
+<!-- Fuente bonita -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #ff9ad5, #ffc3e6);
+    text-align: center;
+    color: #333;
+}
+
+/* BANNER */
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* TEXTOS */
+.texto {
+    margin: 40px 20px;
+    font-size: 20px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* CONTENEDOR */
+.imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.card {
+    background: white;
+    border-radius: 15px;
+    width: 220px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+/* IMAGEN */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* TEXTO DE TARJETA */
+.card p {
+    padding: 15px;
+    font-weight: 500;
+}
+
+/* ANIMACIÓN */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- BANNER -->
+<header>
+    <img src="banner.png" alt="Banner">
+</header>
+
+<!-- TEXTOS -->
+<div class="texto">
+    <h2>✨ Bienvenida a este pequeño rincón ✨</h2>
+</div>
+
+<div class="texto">
+    <p>En esta pagina vas a poder encontrar una comparativa de precios para el maquillaje que usas, haciendo clic en cada imagen seras dirigida al enlace oficial de cada uno de estos 3 principales proveedores.</p>
+</div>
+
+<div class="texto">
+    <p>De esta manera podras encontrar de manera agil y rapida el precio mas accesible en el mercado, para una mujer ocupada como tu el tiempo es muy valioso, y de esta manera espero poder ayudarte a optimizar la busqueda y ahorrar un poco.</p>
+</div>
+
+<div class="texto">
+    <h2>✨ It Cosmetics Bye Bye Pores ✨</h2>
+</div>
+
+<!-- TARJETAS -->
+<div class="imagenes">
+
+    <a href="https://www.sephora.com.mx/products/10gr-341393.html?utm_source=google&utm_medium=cpc&utm_campaign=Elo_EC_Sephora_PMax_Ventas&gad_source=1&gad_campaignid=17613404335&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9yn8rx6VgnHmY39qF6qF-M-O_vbvCk1iP9yDOMXUqombfUhCxJ1BloaArQqEALw_wcB" target="_blank" class="card">
+        <img src="sephora.jpg" alt="Imagen 1">
+        <p>OPCION 1<br>Link Sephora</p>
+    </a>
+
+    <a href="https://a.co/d/02PMEkMF" target="_blank" class="card">
+        <img src="amazon.png" alt="Imagen 2">
+        <p>OPCION 2<br>Link Amazon</p>
+    </a>
+
+    <a href="https://www.mercadolibre.com.mx/it-cosmetics-bye-bye-pores-pressed-polvo-traslucido-compacto-fijador-de-maquillaje-con-peptidos-colageno-hidrolizado-y-seda-acabado-natural-para-todo-tipo-de-piel-9-g/p/MLM32497036?pdp_filters=item_id%3AMLM2278130701&from=gshop&matt_tool=53876314&matt_word=&matt_source=google&matt_campaign_id=23468831482&matt_ad_group_id=190396536206&matt_match_type=&matt_network=g&matt_device=c&matt_creative=793026126858&matt_keyword=&matt_ad_position=&matt_ad_type=pla&matt_merchant_id=735116653&matt_product_id=MLM32497036-product&matt_product_partition_id=2455859763578&matt_target_id=aud-2006290659986:pla-2455859763578&cq_src=google_ads&cq_cmp=23468831482&cq_net=g&cq_plt=gp&cq_med=pla&gad_source=1&gad_campaignid=23468831482&gbraid=0AAAAAoTLPrIIPZ7VmjHoMB4pf_Y-1jVlc&gclid=Cj0KCQjw2MbPBhCSARIsAP3jP9xp4DunCD_oS_5xMHsMFU1_zsuCseRzlbVj2XUXySEtYRD27BzNnOoaArMYEALw_wcB" target="_blank" class="card">
+        <img src="mercado.png" alt="Imagen 3">
+        <p>OPCION 3<br>Link Mercado</p>
+    </a>
+
+</div>
+
+</body>
+</html>
